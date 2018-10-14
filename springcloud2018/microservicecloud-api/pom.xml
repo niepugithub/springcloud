@@ -8,6 +8,10 @@
         <groupId>com.atguigu.springcloud</groupId>
         <artifactId>microservicecloud</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <!--想要让子模块编译成功，必须让子类能找到父类的pom.xml文件。添加父类pom.xml相对路径-->
+        <!--https://blog.csdn.net/Ruidu_Doer/article/details/52710138-->
+        <!--子模块会根据artifactId去找父模块，可惜目前父模块并没有编译出来；所以只能寄希望于找到父类的pom.xml-->
+        <relativePath>../microservicecloud</relativePath>
     </parent>
     <!--当前Module我叫什么名字-->
     <artifactId>microservicecloud-api</artifactId>
