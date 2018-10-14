@@ -12,6 +12,7 @@
     <!--当前Module我叫什么名字-->
     <artifactId>microservicecloud-api</artifactId>
 
+    <!--自动生成getset和构造器等-->
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
