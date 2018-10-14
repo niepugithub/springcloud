@@ -77,4 +77,8 @@
 
         </dependencies>
     </dependencyManagement>
+    <!--手动引入子模块-->
+    <modules>
+        <module>../microservicecloud-api</module>
+    </modules>
 </project>
