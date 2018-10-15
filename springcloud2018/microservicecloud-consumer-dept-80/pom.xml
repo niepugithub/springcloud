@@ -12,7 +12,19 @@
 
     <groupId>com.atguigu.springcloud</groupId>
     <artifactId>microservicecloud-consumer-dept-80</artifactId>
+    <description>部门微服务消费者</description>
     <version>1.0-SNAPSHOT</version>
 
-
+    <dependencies>
+        <!--引入自定义的api通用包，可以使用Dept部门的Entity-->
+        <dependency>
+            <groupId>com.atguigu.springcloud</groupId>
+            <artifactId>microservicecloud-api</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
 </project>
