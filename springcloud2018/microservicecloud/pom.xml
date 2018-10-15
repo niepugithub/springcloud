@@ -80,5 +80,7 @@
     <!--手动引入子模块-->
     <modules>
         <module>../microservicecloud-api</module>
+        <!--为啥老是需要手动添加子模块呢？-->
+        <module>../microservicecloud-provider-dept-8001</module>
     </modules>
 </project>
