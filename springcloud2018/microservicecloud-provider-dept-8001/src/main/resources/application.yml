@@ -32,3 +32,8 @@ eureka:
     prefer-ip-address: true # 访问路径可以显示ip地址
 
 
+info:
+  app.name: atguigu-microservicecloud
+  company.name: www.atguigu.com
+  build.artifactId: ${project.artifactId}  #这里按照视频中的$project.artifactId$不能获取到值
+  build.version: ${project.version}
