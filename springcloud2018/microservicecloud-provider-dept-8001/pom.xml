@@ -57,6 +57,16 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
+        <!--为了让provider能注册到eureka注册中心，添加依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>
