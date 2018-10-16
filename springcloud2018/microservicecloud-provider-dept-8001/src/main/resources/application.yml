@@ -29,7 +29,6 @@ eureka:
       defaultZone: http://localhost:7001/eureka  # 7001eureka注册中心地址：注册本服务提供者
   instance:
     instance-id: microservicecloud-dept8001 #注册到eureka中的实例名
-
-
+    prefer-ip-address: true # 访问路径可以显示ip地址
 
 
