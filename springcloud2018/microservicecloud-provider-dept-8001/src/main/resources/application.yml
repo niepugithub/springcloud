@@ -23,4 +23,12 @@ spring:
       max-wait-millis: 200
 
 
+eureka:
+  client: # 客户端注册进eureka服务列表
+    service-url:
+      defaultZone: http://localhost:7001/eureka  # 7001eureka注册中心地址：注册本服务提供者
+
+
+
+
 
