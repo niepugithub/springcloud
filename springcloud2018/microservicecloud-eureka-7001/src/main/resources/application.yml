@@ -1,6 +1,8 @@
 server:
   port: 7001
 eureka:
+  server:
+    enable-self-preservation: true  # true表示开启自我保护机制
   instance:
     hostname: localhost
   client:
