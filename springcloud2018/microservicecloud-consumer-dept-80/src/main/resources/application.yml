@@ -1,6 +1,10 @@
 server:
   port: 80
 
+spring:
+  application:
+    name: microservicecloud-consumer-dept
+
 eureka:
    client: # 客户端注册进eureka服务列表
      service-url:
