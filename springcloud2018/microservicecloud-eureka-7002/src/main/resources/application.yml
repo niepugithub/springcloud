@@ -4,7 +4,7 @@ eureka:
   server:
     enable-self-preservation: true  # true表示开启自我保护机制
   instance:
-    hostname: eureka7001.com #eureka服务端实例名
+    hostname: eureka7002.com #eureka服务端实例名
   client:
     register-with-eureka: false #false表示不向注册中心注册自己
     fetch-registry: false # false表示自己就是注册中心，我的职责就是维护服务实例，而不需要检索服务
