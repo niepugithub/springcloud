@@ -24,7 +24,7 @@ public class Dept implements Serializable{ // Entity
 
     // 如果自己生成setget和构造器，非常麻烦，尤其是增加或者删除属性的时候，使用lombok
     private Long deptno;// 主键
-    private String danme;// 部门名称
+    private String dname;// 部门名称
     // 来自哪个数据库，因为微服务架构可以一个服务对应一个数据，同一个信息被存储到不同数据库
     private String db_source;
 
@@ -32,7 +32,8 @@ public class Dept implements Serializable{ // Entity
         Dept dept=new Dept(1L,"财务部","DB01");
         Dept d=new Dept();
         // 链式处理案例
-        d.setDanme("开发部").setDb_source("DB01");
+        d.setDname("开发部").setDb_source("DB01");
+        System.out.println(d.getDname());
     }
 
 }
