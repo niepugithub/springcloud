@@ -1,6 +1,6 @@
 package com.atguigu.springcloud;
 
-import com.atguigu.rule.MyRule;
+import com.atguigu.rule.RandomRule_NP;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -16,7 +16,7 @@ import org.springframework.cloud.netflix.ribbon.RibbonClient;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableDiscoveryClient
-@RibbonClient(name = "MICROSERVICECLOUD-DEPT",configuration = MyRule.class)
+@RibbonClient(name = "MICROSERVICECLOUD-DEPT",configuration = RandomRule_NP.class)
 public class DeptConsumer80_App {
 
     public static void main(String[] args) {

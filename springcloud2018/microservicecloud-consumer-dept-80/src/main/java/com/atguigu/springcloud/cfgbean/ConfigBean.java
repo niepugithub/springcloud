@@ -25,8 +25,9 @@ public class ConfigBean {
     }
 
     // 添加其他负载均衡算法；默认是轮询，RoundRobinRule
-    @Bean
-    public IRule myRule(){
-        return new RandomRule();
-    }
+    // 使用自定义的AbstractLoadBalancerRule，下面的这个注释掉
+//    @Bean
+//    public IRule myRule(){
+//        return new RandomRule();
+//    }
 }
