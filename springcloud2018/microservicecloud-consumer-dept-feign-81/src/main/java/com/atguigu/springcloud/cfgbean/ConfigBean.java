@@ -1,10 +1,10 @@
 package com.atguigu.springcloud.cfgbean;
 
-import com.netflix.loadbalancer.IRule;
-import com.netflix.loadbalancer.RandomRule;
+import feign.Feign;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 import org.springframework.web.client.RestTemplate;
 
 /**
@@ -23,6 +23,13 @@ public class ConfigBean {
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
     }
+
+    // FeignClientsConfiguration中可以看到，没有Feign.Builder，yml便没有feign.clent.enabled属性
+//    @Bean
+//    @Scope("prototype")
+//    public Feign.Builder feignHystrixBuilder() {
+//        return Feign.builder();
+//    }
 
     // 添加其他负载均衡算法；默认是轮询，RoundRobinRule
     // 使用自定义的AbstractLoadBalancerRule，下面的这个注释掉

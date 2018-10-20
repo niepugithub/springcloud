@@ -19,3 +19,7 @@ info:
    company.name: www.huawei.com
    build.artifactId: ${project.artifactId}  #这里按照视频中的$project.artifactId$不能获取到值
    build.version: ${project.version}
+
+feign:
+  hystrix:
+    enabled: true
