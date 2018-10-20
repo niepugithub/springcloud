@@ -31,7 +31,7 @@ public class DeptClientServiceFallbackFactory implements FallbackFactory<DeptCli
 
             @Override
             public Dept get(Long id) {
-                return new Dept(id,"该id没有对应部门","no source");
+                return new Dept(id,"该id没有对应部门","统一处理");
             }
 
             @Override
