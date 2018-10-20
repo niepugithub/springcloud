@@ -15,7 +15,7 @@ import java.util.List;
  * @version:1.0
  * @date:2018/10/20 17:37
  **/
-@FeignClient(value = "MICROSERVICECLOUD-DEPT",fallback = DeptClientServiceFallbackFactory.class)
+@FeignClient(value = "MICROSERVICECLOUD-DEPT",fallbackFactory = DeptClientServiceFallbackFactory.class)
 public interface DeptClientService {
     @RequestMapping(value = "/dept/add",method = RequestMethod.POST)
     boolean add(@RequestBody Dept dept);
