@@ -8,7 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:niepugithub/springcloud.git
+          uri: git@github.com:niepugithub/spring-cloud-config.git
 
 info:
   app.name: atguigu-microservicecloud-config
