@@ -1,0 +1,17 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name: microservicecloud-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:niepugithub/springcloud.git
+
+info:
+  app.name: atguigu-microservicecloud-config
+  company.name: www.atguigu.com
+  build.artifactId: ${project.artifactId}  #这里按照视频中的$project.artifactId$不能获取到值
+  build.version: ${project.version}
