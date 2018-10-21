@@ -13,7 +13,8 @@ eureka:
     prefer-ip-address: true # 访问路径可以显示ip地址
 
 zuul:
-  ignored-services: microservicecloud-dept
+  ignored-services: "*"
+#  ignored-services: microservicecloud-dept
   routes:
     mydept.serviceId: microservicecloud-dept
     mydept.path: /mydept/**
