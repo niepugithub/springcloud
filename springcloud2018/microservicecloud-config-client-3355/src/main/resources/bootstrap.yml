@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      name: microservicecloud-config-client #需要从个github上获取资源名，没有后缀名
+      profile: dev #本次访问的配置项
+      label: master
+#      uri: git@github.com:niepugithub/spring-cloud-config.git #这是3344服务端的事，写git地址
+      uri: http://config-3344.com:3344 #本服务启动后去找3344服务，通过springcloudconfig获取github服务地址
